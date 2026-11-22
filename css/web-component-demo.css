@@ -1,0 +1,35 @@
+fun-facts {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    background-color: var(--bright-accent-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    --panel-background: var(--main-bg-color, white);
+    --panel-text-color: var(--dark-accent-color, black);
+}
+
+fun-facts fact-body {
+    background-color: var(--panel-background);
+    color: var(--panel-text-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+fun-facts p {
+    margin: 0;
+    padding: 0;
+}
+
+fun-facts button-storage {
+    display: flex;
+    gap: 1rem;
+}
+
+#fun-fact-toggle {
+    display: none;
+}

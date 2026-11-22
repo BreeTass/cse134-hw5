@@ -173,7 +173,7 @@ button, .form-button {
 }
 
 button:focus, input:focus, textarea:focus, iframe:focus {
-    border: 1px solid black;
+    outline: 3px solid invert;
 }
 
 form {
@@ -199,7 +199,7 @@ textarea {
 }
 
 input:user-invalid, textarea:user-invalid {
-    border: 2px solid rgb(157, 16, 16);
+    outline: 2px solid rgb(157, 16, 16);
     background-color: rgb(255, 219, 227);
 }
 
