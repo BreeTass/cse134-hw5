@@ -1,0 +1,60 @@
+---
+import '../css/styles.css';
+import '../css/homepage.css';
+
+import imagePlaceholder from '../images/placeholder.png';
+import githubLogo from '../images/github_logo.png';
+
+import Navigation from '../components/navigation.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bree Tassinari's Portfolio</title>
+    <link rel="icon" href="favicon.ico">
+    <script src="/globals.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <Navigation />
+    </header>
+    
+    <main>
+        <hello-world></hello-world>
+
+        <section class="personal-info">
+            <section class="name-and-links">
+    
+                <h1 id="homepage-name">Bree Tassinari</h1>
+                <h2>Game Programmer & Software Engineer</h2>
+                <nav class="homepage-nav">
+                    <ul>
+                        <li><a href="https://github.com/BreeTass">
+                            <img src={githubLogo.src} alt="Github Profile Link" width="30" height="30">
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/in/bree-tassinari">
+                            <img src={imagePlaceholder.src} alt="Linkedin Profile Link" width="30" height="30">
+                        </a></li>
+                        <li><a href="https://discord.com/users/515930224052011009">
+                            <img src={imagePlaceholder.src} alt="Discord Profile Link" width="30" height="30">
+                        </a></li>
+                        <li><a href="https://www.instagram.com/breetassinari/">
+                            <img src={imagePlaceholder.src} alt="Instagram Profile Link" width="30" height="30">
+                        </a></li>
+                    </ul>
+                </nav>
+            </section>
+            <img class="profile-picture" src={imagePlaceholder.src} alt="Bree Tassinari's Profile Picture" />
+        </section>
+        <div id="welcome-message">
+            <h3>Welcome to my site!</h3>
+        </div>
+    </main>
+</body>
+
+</html>
